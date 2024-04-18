@@ -119,7 +119,7 @@ def input_error_phone(func):
         try:
             return func(*args, **kwargs)
         except ValueError:
-            return "Wrong Input format! Please, enter Name and 10 digit format Phone Number"
+            return "Wrong input format! Please, enter Name and 10 digit format Phone Number"
         except KeyError:
             return "Record is missing."
         except IndexError:
